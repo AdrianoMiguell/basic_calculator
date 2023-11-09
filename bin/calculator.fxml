@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="460.0" maxWidth="600.0" minWidth="490.0" style="-fx-background-color: #0b0112;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CalculatorController">
+   <children>
+      <Text fill="WHITE" layoutX="17.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Calculator" wrappingWidth="271.13671875">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnOne" layoutX="14.0" layoutY="397.0" maxHeight="80.0" maxWidth="160.0" mnemonicParsing="false" onAction="#btnOneActived" style="-fx-background-color: #020118; -fx-border-color: #4e4e4e75; -fx-border-radius: 5px; -fx-min-width: 115px; -fx-min-height: 55px; -fx-max-width: 160px; -fx-max-height: 80px;" text="1" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+         <effect>
+            <InnerShadow blurType="ONE_PASS_BOX">
+               <color>
+                  <Color red="0.4300000071525574" green="0.4300000071525574" blue="0.4300000071525574" opacity="0.06870228797197342" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </Button>
+      <Pane disable="true" layoutX="17.0" layoutY="90.0" />
+      <Button fx:id="btnTwo" layoutX="130.0" layoutY="397.0" maxHeight="80.0" maxWidth="160.0" mnemonicParsing="false" onAction="#btnTwoActived" style="-fx-background-color: #020118; -fx-border-color: #4e4e4e75; -fx-border-radius: 5px; -fx-min-width: 115px; -fx-min-height: 55px; -fx-max-width: 160px; -fx-max-height: 80px;" text="2" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+         <effect>
+            <InnerShadow blurType="ONE_PASS_BOX">
+               <color>
+                  <Color red="0.4300000071525574" green="0.4300000071525574" blue="0.4300000071525574" opacity="0.06870228797197342" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </Button>
+      <Button fx:id="btnThree" layoutX="246.0" layoutY="397.0" maxHeight="80.0" maxWidth="160.0" mnemonicParsing="false" onAction="#btnThreeActived" style="-fx-background-color: #020118; -fx-border-color: #4e4e4e75; -fx-border-radius: 5px; -fx-min-width: 115px; -fx-min-height: 55px; -fx-max-width: 160px; -fx-max-height: 80px;" text="3" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+         <effect>
+            <InnerShadow blurType="ONE_PASS_BOX">
+               <color>
+                  <Color red="0.4300000071525574" green="0.4300000071525574" blue="0.4300000071525574" opacity="0.06870228797197342" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </Button>
+      <Button fx:id="btnEqual" layoutX="362.0" layoutY="453.0" maxHeight="80.0" maxWidth="160.0" mnemonicParsing="false" onMouseClicked="#btnEqualClicked" style="-fx-background-color: #020118; -fx-border-color: #4e4e4e75; -fx-border-radius: 5px; -fx-min-width: 115px; -fx-min-height: 55px; -fx-max-width: 160px; -fx-max-height: 80px;" text="=" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+         <effect>
+            <InnerShadow blurType="ONE_PASS_BOX">
+               <color>
+                  <Color red="0.4300000071525574" green="0.4300000071525574" blue="0.4300000071525574" opacity="0.06870228797197342" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </Button>
+      <Button fx:id="btnFour" layoutX="14.0" layoutY="341.0" maxHeight="80.0" maxWidth="160.0" mnemonicParsing="false" onAction="#btnFourActived" style="-fx-background-color: #020118; -fx-border-color: #4e4e4e75; -fx-border-radius: 5px; -fx-min-width: 115px; -fx-min-height: 55px; -fx-max-width: 160px; -fx-max-height: 80px;" text="4" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+         <effect>
+            <InnerShadow blurType="ONE_PASS_BOX">
+               <color>
+                  <Color red="0.4300000071525574" green="0.4300000071525574" blue="0.4300000071525574" opacity="0.06870228797197342" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </Button>
+      <Button fx:id="btnFive" layoutX="130.0" layoutY="341.0" maxHeight="80.0" maxWidth="160.0" mnemonicParsing="false" onAction="#btnFiveActived" style="-fx-background-color: #020118; -fx-border-color: #4e4e4e75; -fx-border-radius: 5px; -fx-min-width: 115px; -fx-min-height: 55px; -fx-max-width: 160px; -fx-max-height: 80px;" text="5" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+         <effect>
+            <InnerShadow blurType="ONE_PASS_BOX">
+               <color>
+                  <Color red="0.4300000071525574" green="0.4300000071525574" blue="0.4300000071525574" opacity="0.06870228797197342" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </Button>
+      <Button fx:id="btnSix" layoutX="246.0" layoutY="341.0" maxHeight="80.0" maxWidth="160.0" mnemonicParsing="false" onAction="#btnSixActived" style="-fx-background-color: #020118; -fx-border-color: #4e4e4e75; -fx-border-radius: 5px; -fx-min-width: 115px; -fx-min-height: 55px; -fx-max-width: 160px; -fx-max-height: 80px;" text="6" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+         <effect>
+            <InnerShadow blurType="ONE_PASS_BOX">
+               <color>
+                  <Color red="0.4300000071525574" green="0.4300000071525574" blue="0.4300000071525574" opacity="0.06870228797197342" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </Button>
+      <Button fx:id="btnSeven" layoutX="14.0" layoutY="285.0" maxHeight="80.0" maxWidth="160.0" mnemonicParsing="false" onAction="#btnSevenActived" style="-fx-background-color: #020118; -fx-border-color: #4e4e4e75; -fx-border-radius: 5px; -fx-min-width: 115px; -fx-min-height: 55px; -fx-max-width: 160px; -fx-max-height: 80px;" text="7" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+         <effect>
+            <InnerShadow blurType="ONE_PASS_BOX">
+               <color>
+                  <Color red="0.4300000071525574" green="0.4300000071525574" blue="0.4300000071525574" opacity="0.06870228797197342" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </Button>
+      <Button fx:id="btnEight" layoutX="130.0" layoutY="285.0" maxHeight="80.0" maxWidth="160.0" mnemonicParsing="false" onAction="#btnEightActived" style="-fx-background-color: #020118; -fx-border-color: #4e4e4e75; -fx-border-radius: 5px; -fx-min-width: 115px; -fx-min-height: 55px; -fx-max-width: 160px; -fx-max-height: 80px;" text="8" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+         <effect>
+            <InnerShadow blurType="ONE_PASS_BOX">
+               <color>
+                  <Color red="0.4300000071525574" green="0.4300000071525574" blue="0.4300000071525574" opacity="0.06870228797197342" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </Button>
+      <Button fx:id="btnNine" layoutX="246.0" layoutY="285.0" maxHeight="80.0" maxWidth="160.0" mnemonicParsing="false" onAction="#btnNineActived" style="-fx-background-color: #020118; -fx-border-color: #4e4e4e75; -fx-border-radius: 5px; -fx-min-width: 115px; -fx-min-height: 55px; -fx-max-width: 160px; -fx-max-height: 80px;" text="9" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+         <effect>
+            <InnerShadow blurType="ONE_PASS_BOX">
+               <color>
+                  <Color red="0.4300000071525574" green="0.4300000071525574" blue="0.4300000071525574" opacity="0.06870228797197342" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </Button>
+      <Button fx:id="btnZero" layoutX="130.0" layoutY="453.0" maxHeight="80.0" maxWidth="160.0" mnemonicParsing="false" onAction="#btnZeroActived" style="-fx-background-color: #020118; -fx-border-color: #4e4e4e75; -fx-border-radius: 5px; -fx-min-width: 115px; -fx-min-height: 55px; -fx-max-width: 160px; -fx-max-height: 80px;" text="0" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+         <effect>
+            <InnerShadow blurType="ONE_PASS_BOX">
+               <color>
+                  <Color red="0.4300000071525574" green="0.4300000071525574" blue="0.4300000071525574" opacity="0.06870228797197342" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </Button>
+      <Button fx:id="btnDiv" layoutX="362.0" layoutY="397.0" maxHeight="80.0" maxWidth="160.0" mnemonicParsing="false" onAction="#btnDivActived" style="-fx-background-color: #020118; -fx-border-color: #4e4e4e75; -fx-border-radius: 5px; -fx-min-width: 115px; -fx-min-height: 55px; -fx-max-width: 160px; -fx-max-height: 80px;" text="÷" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+         <effect>
+            <InnerShadow blurType="ONE_PASS_BOX">
+               <color>
+                  <Color red="0.4300000071525574" green="0.4300000071525574" blue="0.4300000071525574" opacity="0.06870228797197342" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </Button>
+      <Button fx:id="btnMult" layoutX="362.0" layoutY="341.0" maxHeight="80.0" maxWidth="160.0" mnemonicParsing="false" onAction="#btnMultActived" style="-fx-background-color: #020118; -fx-border-color: #4e4e4e75; -fx-border-radius: 5px; -fx-min-width: 115px; -fx-min-height: 55px; -fx-max-width: 160px; -fx-max-height: 80px;" text="×" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+         <effect>
+            <InnerShadow blurType="ONE_PASS_BOX">
+               <color>
+                  <Color red="0.4300000071525574" green="0.4300000071525574" blue="0.4300000071525574" opacity="0.06870228797197342" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </Button>
+      <Button fx:id="btnSub" layoutX="362.0" layoutY="285.0" maxHeight="80.0" maxWidth="160.0" mnemonicParsing="false" onAction="#btnSubActived" style="-fx-background-color: #020118; -fx-border-color: #4e4e4e75; -fx-border-radius: 5px; -fx-min-width: 115px; -fx-min-height: 55px; -fx-max-width: 160px; -fx-max-height: 80px;" text="-" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+         <effect>
+            <InnerShadow blurType="ONE_PASS_BOX">
+               <color>
+                  <Color red="0.4300000071525574" green="0.4300000071525574" blue="0.4300000071525574" opacity="0.06870228797197342" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </Button>
+      <Button fx:id="btnAdd" layoutX="362.0" layoutY="229.0" maxHeight="80.0" maxWidth="160.0" mnemonicParsing="false" onAction="#btnAddActived" style="-fx-background-color: #020118; -fx-border-color: #4e4e4e75; -fx-border-radius: 5px; -fx-min-width: 115px; -fx-min-height: 55px; -fx-max-width: 160px; -fx-max-height: 80px;" text="+" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+         <effect>
+            <InnerShadow blurType="ONE_PASS_BOX">
+               <color>
+                  <Color red="0.4300000071525574" green="0.4300000071525574" blue="0.4300000071525574" opacity="0.06870228797197342" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </Button>
+      <Button fx:id="btnCancelEntry" alignment="TOP_CENTER" layoutX="246.0" layoutY="173.0" maxHeight="80.0" maxWidth="160.0" mnemonicParsing="false" onAction="#btnCancelEntryActived" style="-fx-background-color: #020118; -fx-border-color: #4e4e4e75; -fx-border-radius: 5px; -fx-min-width: 115px; -fx-min-height: 55px; -fx-max-width: 160px; -fx-max-height: 80px;" text="CE" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <effect>
+            <InnerShadow blurType="ONE_PASS_BOX">
+               <color>
+                  <Color red="0.4300000071525574" green="0.4300000071525574" blue="0.4300000071525574" opacity="0.06870228797197342" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </Button>
+      <TextField fx:id="enterValueField" alignment="BOTTOM_LEFT" layoutX="14.0" layoutY="80.0" onKeyPressed="#enterValueFieldPressed" prefHeight="74.0" prefWidth="462.0" style="-fx-background-color: #020118; -fx-text-fill: #fefefe;">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </TextField>
+      <Label fx:id="responseValue" alignment="CENTER_RIGHT" layoutX="304.0" layoutY="90.0" prefHeight="26.0" prefWidth="160.0" textFill="#b2b2b2">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Button fx:id="btnClean" alignment="TOP_CENTER" layoutX="130.0" layoutY="173.0" maxHeight="80.0" maxWidth="160.0" mnemonicParsing="false" onAction="#btnCleanActived" style="-fx-background-color: #020118; -fx-border-color: #4e4e4e75; -fx-border-radius: 5px; -fx-min-width: 115px; -fx-min-height: 55px; -fx-max-width: 160px; -fx-max-height: 80px;" text="C" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <effect>
+            <InnerShadow blurType="ONE_PASS_BOX">
+               <color>
+                  <Color red="0.4300000071525574" green="0.4300000071525574" blue="0.4300000071525574" opacity="0.06870228797197342" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </Button>
+      <Button fx:id="btnPercent" alignment="TOP_CENTER" layoutX="14.0" layoutY="173.0" maxHeight="80.0" maxWidth="160.0" mnemonicParsing="false" onAction="#btnPercentActived" style="-fx-background-color: #020118; -fx-border-color: #4e4e4e75; -fx-border-radius: 5px; -fx-min-width: 115px; -fx-min-height: 55px; -fx-max-width: 160px; -fx-max-height: 80px;" text="\%" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <effect>
+            <InnerShadow blurType="ONE_PASS_BOX">
+               <color>
+                  <Color red="0.4300000071525574" green="0.4300000071525574" blue="0.4300000071525574" opacity="0.06870228797197342" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </Button>
+      <Button fx:id="btnOpenParent" layoutX="130.0" layoutY="229.0" maxHeight="80.0" maxWidth="160.0" mnemonicParsing="false" onAction="#btnOpenParentActived" style="-fx-background-color: #020118; -fx-border-color: #4e4e4e75; -fx-border-radius: 5px; -fx-min-width: 115px; -fx-min-height: 55px; -fx-max-width: 160px; -fx-max-height: 80px;" text="(" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+         <effect>
+            <InnerShadow blurType="ONE_PASS_BOX">
+               <color>
+                  <Color red="0.4300000071525574" green="0.4300000071525574" blue="0.4300000071525574" opacity="0.06870228797197342" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </Button>
+      <Button fx:id="btnInverse" layoutX="14.0" layoutY="229.0" maxHeight="80.0" maxWidth="160.0" mnemonicParsing="false" onAction="#btnInverseActived" style="-fx-background-color: #020118; -fx-border-color: #4e4e4e75; -fx-border-radius: 5px; -fx-min-width: 115px; -fx-min-height: 55px; -fx-max-width: 160px; -fx-max-height: 80px;" text="1/x" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+         <effect>
+            <InnerShadow blurType="ONE_PASS_BOX">
+               <color>
+                  <Color red="0.4300000071525574" green="0.4300000071525574" blue="0.4300000071525574" opacity="0.06870228797197342" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </Button>
+      <Button fx:id="btnClousedParent" layoutX="246.0" layoutY="229.0" maxHeight="80.0" maxWidth="160.0" mnemonicParsing="false" onAction="#btnClousedParentActived" style="-fx-background-color: #020118; -fx-border-color: #4e4e4e75; -fx-border-radius: 5px; -fx-min-width: 115px; -fx-min-height: 55px; -fx-max-width: 160px; -fx-max-height: 80px;" text=")" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+         <effect>
+            <InnerShadow blurType="ONE_PASS_BOX">
+               <color>
+                  <Color red="0.4300000071525574" green="0.4300000071525574" blue="0.4300000071525574" opacity="0.06870228797197342" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </Button>
+      <Button fx:id="btnComma" layoutX="246.0" layoutY="454.0" maxHeight="80.0" maxWidth="160.0" mnemonicParsing="false" onAction="#btnCommaActived" style="-fx-background-color: #020118; -fx-border-color: #4e4e4e75; -fx-border-radius: 5px; -fx-min-width: 115px; -fx-min-height: 55px; -fx-max-width: 160px; -fx-max-height: 80px;" text="," textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+         <effect>
+            <InnerShadow blurType="ONE_PASS_BOX">
+               <color>
+                  <Color red="0.4300000071525574" green="0.4300000071525574" blue="0.4300000071525574" opacity="0.06870228797197342" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </Button>
+      <Button fx:id="btnNegative" layoutX="14.0" layoutY="454.0" maxHeight="80.0" maxWidth="160.0" mnemonicParsing="false" onAction="#btnNegativeActived" style="-fx-background-color: #020118; -fx-border-color: #4e4e4e75; -fx-border-radius: 5px; -fx-min-width: 115px; -fx-min-height: 55px; -fx-max-width: 160px; -fx-max-height: 80px;" text="+/-" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+         <effect>
+            <InnerShadow blurType="ONE_PASS_BOX">
+               <color>
+                  <Color red="0.4300000071525574" green="0.4300000071525574" blue="0.4300000071525574" opacity="0.06870228797197342" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </Button>
+      <Button fx:id="btnBackspace" alignment="TOP_CENTER" layoutX="362.0" layoutY="173.0" maxHeight="80.0" maxWidth="160.0" mnemonicParsing="false" onAction="#btnBackspaceActived" style="-fx-background-color: #020118; -fx-border-color: #4e4e4e75; -fx-border-radius: 5px; -fx-min-width: 115px; -fx-min-height: 55px; -fx-max-width: 160px; -fx-max-height: 80px;" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <effect>
+            <InnerShadow blurType="ONE_PASS_BOX">
+               <color>
+                  <Color red="0.4300000071525574" green="0.4300000071525574" blue="0.4300000071525574" opacity="0.06870228797197342" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </Button>
+      <Button fx:id="iconBackspace" accessibleRole="IMAGE_VIEW" layoutX="404.0" layoutY="191.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="31.0" style="-fx-background-color: #0b0122; -fx-border-color: #888; -fx-shape: &quot;M576 64H205.26A63.97 63.97 0 0 0 160 82.75L9.37 233.37c-12.5 12.5-12.5 32.76 0 45.25L160 429.25c12 12 28.28 18.75 45.25 18.75H576c35.35 0 64-28.65 64-64V128c0-35.35-28.65-64-64-64zm-84.69 254.06c6.25 6.25 6.25 16.38 0 22.63l-22.62 22.62c-6.25 6.25-16.38 6.25-22.63 0L384 301.25l-62.06 62.06c-6.25 6.25-16.38 6.25-22.63 0l-22.62-22.62c-6.25-6.25-6.25-16.38 0-22.63L338.75 256l-62.06-62.06c-6.25-6.25-6.25-16.38 0-22.63l22.62-22.62c6.25-6.25 16.38-6.25 22.63 0L384 210.75l62.06-62.06c6.25-6.25 16.38-6.25 22.63 0l22.62 22.62c6.25 6.25 6.25 16.38 0 22.63L429.25 256l62.06 62.06z&quot;; -fx-font-size: 12pt; -fx-min-width: 14px; -fx-min-height: 14px;" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</AnchorPane>
