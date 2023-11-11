@@ -37,6 +37,8 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.paint.Color?>
@@ -45,7 +47,7 @@
 
 <AnchorPane maxHeight="460.0" maxWidth="600.0" minWidth="490.0" style="-fx-background-color: #0b0112;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CalculatorController">
    <children>
-      <Text fill="WHITE" layoutX="17.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Calculator" wrappingWidth="271.13671875">
+      <Text fill="#9a9595" layoutX="14.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Calculadora Padrão" wrappingWidth="314.13671875">
          <font>
             <Font size="34.0" />
          </font>
@@ -135,7 +137,7 @@
             </InnerShadow>
          </effect>
       </Button>
-      <Button fx:id="btnSeven" layoutX="14.0" layoutY="285.0" maxHeight="80.0" maxWidth="160.0" mnemonicParsing="false" onAction="#btnSevenActived" style="-fx-background-color: #020118; -fx-border-color: #4e4e4e75; -fx-border-radius: 5px; -fx-min-width: 115px; -fx-min-height: 55px; -fx-max-width: 160px; -fx-max-height: 80px;" text="7" textAlignment="CENTER" textFill="WHITE">
+      <Button fx:id="btnSeven" alignment="CENTER" layoutX="14.0" layoutY="285.0" maxHeight="80.0" maxWidth="160.0" mnemonicParsing="false" onAction="#btnSevenActived" style="-fx-background-color: #020118; -fx-border-color: #4e4e4e75; -fx-border-radius: 5px; -fx-min-width: 115px; -fx-min-height: 55px; -fx-max-width: 160px; -fx-max-height: 80px;" text="7" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font size="21.0" />
          </font>
@@ -147,7 +149,7 @@
             </InnerShadow>
          </effect>
       </Button>
-      <Button fx:id="btnEight" layoutX="130.0" layoutY="285.0" maxHeight="80.0" maxWidth="160.0" mnemonicParsing="false" onAction="#btnEightActived" style="-fx-background-color: #020118; -fx-border-color: #4e4e4e75; -fx-border-radius: 5px; -fx-min-width: 115px; -fx-min-height: 55px; -fx-max-width: 160px; -fx-max-height: 80px;" text="8" textAlignment="CENTER" textFill="WHITE">
+      <Button fx:id="btnEight" alignment="CENTER" layoutX="130.0" layoutY="285.0" maxHeight="80.0" maxWidth="160.0" mnemonicParsing="false" onAction="#btnEightActived" style="-fx-background-color: #020118; -fx-border-color: #4e4e4e75; -fx-border-radius: 5px; -fx-min-width: 115px; -fx-min-height: 55px; -fx-max-width: 160px; -fx-max-height: 80px;" text="8" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font size="21.0" />
          </font>
@@ -159,7 +161,7 @@
             </InnerShadow>
          </effect>
       </Button>
-      <Button fx:id="btnNine" layoutX="246.0" layoutY="285.0" maxHeight="80.0" maxWidth="160.0" mnemonicParsing="false" onAction="#btnNineActived" style="-fx-background-color: #020118; -fx-border-color: #4e4e4e75; -fx-border-radius: 5px; -fx-min-width: 115px; -fx-min-height: 55px; -fx-max-width: 160px; -fx-max-height: 80px;" text="9" textAlignment="CENTER" textFill="WHITE">
+      <Button fx:id="btnNine" alignment="CENTER" layoutX="246.0" layoutY="285.0" maxHeight="80.0" maxWidth="160.0" mnemonicParsing="false" onAction="#btnNineActived" style="-fx-background-color: #020118; -fx-border-color: #4e4e4e75; -fx-border-radius: 5px; -fx-min-width: 115px; -fx-min-height: 55px; -fx-max-width: 160px; -fx-max-height: 80px;" text="9" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font size="21.0" />
          </font>
@@ -207,7 +209,7 @@
             </InnerShadow>
          </effect>
       </Button>
-      <Button fx:id="btnSub" layoutX="362.0" layoutY="285.0" maxHeight="80.0" maxWidth="160.0" mnemonicParsing="false" onAction="#btnSubActived" style="-fx-background-color: #020118; -fx-border-color: #4e4e4e75; -fx-border-radius: 5px; -fx-min-width: 115px; -fx-min-height: 55px; -fx-max-width: 160px; -fx-max-height: 80px;" text="-" textAlignment="CENTER" textFill="WHITE">
+      <Button fx:id="btnSub" alignment="CENTER" layoutX="362.0" layoutY="285.0" maxHeight="80.0" maxWidth="160.0" mnemonicParsing="false" onAction="#btnSubActived" style="-fx-background-color: #020118; -fx-border-color: #4e4e4e75; -fx-border-radius: 5px; -fx-min-width: 115px; -fx-min-height: 55px; -fx-max-width: 160px; -fx-max-height: 80px;" text="-" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font size="21.0" />
          </font>
@@ -219,7 +221,7 @@
             </InnerShadow>
          </effect>
       </Button>
-      <Button fx:id="btnAdd" layoutX="362.0" layoutY="229.0" maxHeight="80.0" maxWidth="160.0" mnemonicParsing="false" onAction="#btnAddActived" style="-fx-background-color: #020118; -fx-border-color: #4e4e4e75; -fx-border-radius: 5px; -fx-min-width: 115px; -fx-min-height: 55px; -fx-max-width: 160px; -fx-max-height: 80px;" text="+" textAlignment="CENTER" textFill="WHITE">
+      <Button fx:id="btnAdd" alignment="CENTER" layoutX="362.0" layoutY="229.0" maxHeight="80.0" maxWidth="160.0" mnemonicParsing="false" onAction="#btnAddActived" style="-fx-background-color: #020118; -fx-border-color: #4e4e4e75; -fx-border-radius: 5px; -fx-min-width: 115px; -fx-min-height: 55px; -fx-max-width: 160px; -fx-max-height: 80px;" text="+" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font size="21.0" />
          </font>
@@ -231,7 +233,7 @@
             </InnerShadow>
          </effect>
       </Button>
-      <Button fx:id="btnCancelEntry" alignment="TOP_CENTER" layoutX="246.0" layoutY="173.0" maxHeight="80.0" maxWidth="160.0" mnemonicParsing="false" onAction="#btnCancelEntryActived" style="-fx-background-color: #020118; -fx-border-color: #4e4e4e75; -fx-border-radius: 5px; -fx-min-width: 115px; -fx-min-height: 55px; -fx-max-width: 160px; -fx-max-height: 80px;" text="CE" textAlignment="CENTER" textFill="WHITE">
+      <Button fx:id="btnCancelEntry" alignment="CENTER" layoutX="246.0" layoutY="173.0" maxHeight="80.0" maxWidth="160.0" mnemonicParsing="false" onAction="#btnCancelEntryActived" style="-fx-background-color: #020118; -fx-border-color: #4e4e4e75; -fx-border-radius: 5px; -fx-min-width: 115px; -fx-min-height: 55px; -fx-max-width: 160px; -fx-max-height: 80px;" text="CE" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font size="21.0" />
          </font>
@@ -255,7 +257,7 @@
          <font>
             <Font size="16.0" />
          </font></Label>
-      <Button fx:id="btnClean" alignment="TOP_CENTER" layoutX="130.0" layoutY="173.0" maxHeight="80.0" maxWidth="160.0" mnemonicParsing="false" onAction="#btnCleanActived" style="-fx-background-color: #020118; -fx-border-color: #4e4e4e75; -fx-border-radius: 5px; -fx-min-width: 115px; -fx-min-height: 55px; -fx-max-width: 160px; -fx-max-height: 80px;" text="C" textAlignment="CENTER" textFill="WHITE">
+      <Button fx:id="btnClean" alignment="CENTER" layoutX="130.0" layoutY="173.0" maxHeight="80.0" maxWidth="160.0" mnemonicParsing="false" onAction="#btnCleanActived" style="-fx-background-color: #020118; -fx-border-color: #4e4e4e75; -fx-border-radius: 5px; -fx-min-width: 115px; -fx-min-height: 55px; -fx-max-width: 160px; -fx-max-height: 80px;" text="C" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font size="21.0" />
          </font>
@@ -270,7 +272,7 @@
             </InnerShadow>
          </effect>
       </Button>
-      <Button fx:id="btnPercent" alignment="TOP_CENTER" layoutX="14.0" layoutY="173.0" maxHeight="80.0" maxWidth="160.0" mnemonicParsing="false" onAction="#btnPercentActived" style="-fx-background-color: #020118; -fx-border-color: #4e4e4e75; -fx-border-radius: 5px; -fx-min-width: 115px; -fx-min-height: 55px; -fx-max-width: 160px; -fx-max-height: 80px;" text="\%" textAlignment="CENTER" textFill="WHITE">
+      <Button fx:id="btnPercent" alignment="CENTER" layoutX="14.0" layoutY="173.0" maxHeight="80.0" maxWidth="160.0" mnemonicParsing="false" onAction="#btnPercentActived" style="-fx-background-color: #020118; -fx-border-color: #4e4e4e75; -fx-border-radius: 5px; -fx-min-width: 115px; -fx-min-height: 55px; -fx-max-width: 160px; -fx-max-height: 80px;" text="\%" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font size="21.0" />
          </font>
@@ -285,7 +287,7 @@
             </InnerShadow>
          </effect>
       </Button>
-      <Button fx:id="btnOpenParent" layoutX="130.0" layoutY="229.0" maxHeight="80.0" maxWidth="160.0" mnemonicParsing="false" onAction="#btnOpenParentActived" style="-fx-background-color: #020118; -fx-border-color: #4e4e4e75; -fx-border-radius: 5px; -fx-min-width: 115px; -fx-min-height: 55px; -fx-max-width: 160px; -fx-max-height: 80px;" text="(" textAlignment="CENTER" textFill="WHITE">
+      <Button fx:id="btnOpenParent" alignment="CENTER" layoutX="130.0" layoutY="229.0" maxHeight="80.0" maxWidth="160.0" mnemonicParsing="false" onAction="#btnOpenParentActived" style="-fx-background-color: #020118; -fx-border-color: #4e4e4e75; -fx-border-radius: 5px; -fx-min-width: 115px; -fx-min-height: 55px; -fx-max-width: 160px; -fx-max-height: 80px;" text="(" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font size="21.0" />
          </font>
@@ -297,7 +299,7 @@
             </InnerShadow>
          </effect>
       </Button>
-      <Button fx:id="btnInverse" layoutX="14.0" layoutY="229.0" maxHeight="80.0" maxWidth="160.0" mnemonicParsing="false" onAction="#btnInverseActived" style="-fx-background-color: #020118; -fx-border-color: #4e4e4e75; -fx-border-radius: 5px; -fx-min-width: 115px; -fx-min-height: 55px; -fx-max-width: 160px; -fx-max-height: 80px;" text="1/x" textAlignment="CENTER" textFill="WHITE">
+      <Button fx:id="btnInverse" alignment="CENTER" layoutX="14.0" layoutY="229.0" maxHeight="80.0" maxWidth="160.0" mnemonicParsing="false" onAction="#btnInverseActived" style="-fx-background-color: #020118; -fx-border-color: #4e4e4e75; -fx-border-radius: 5px; -fx-min-width: 115px; -fx-min-height: 55px; -fx-max-width: 160px; -fx-max-height: 80px;" text="1/x" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font size="21.0" />
          </font>
@@ -309,7 +311,7 @@
             </InnerShadow>
          </effect>
       </Button>
-      <Button fx:id="btnClousedParent" layoutX="246.0" layoutY="229.0" maxHeight="80.0" maxWidth="160.0" mnemonicParsing="false" onAction="#btnClousedParentActived" style="-fx-background-color: #020118; -fx-border-color: #4e4e4e75; -fx-border-radius: 5px; -fx-min-width: 115px; -fx-min-height: 55px; -fx-max-width: 160px; -fx-max-height: 80px;" text=")" textAlignment="CENTER" textFill="WHITE">
+      <Button fx:id="btnClousedParent" alignment="CENTER" layoutX="246.0" layoutY="229.0" maxHeight="80.0" maxWidth="160.0" mnemonicParsing="false" onAction="#btnClousedParentActived" style="-fx-background-color: #020118; -fx-border-color: #4e4e4e75; -fx-border-radius: 5px; -fx-min-width: 115px; -fx-min-height: 55px; -fx-max-width: 160px; -fx-max-height: 80px;" text=")" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font size="21.0" />
          </font>
@@ -360,11 +362,11 @@
             </InnerShadow>
          </effect>
       </Button>
-      <Button fx:id="iconBackspace" accessibleRole="IMAGE_VIEW" layoutX="404.0" layoutY="191.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="31.0" style="-fx-background-color: #0b0122; -fx-border-color: #888; -fx-shape: &quot;M576 64H205.26A63.97 63.97 0 0 0 160 82.75L9.37 233.37c-12.5 12.5-12.5 32.76 0 45.25L160 429.25c12 12 28.28 18.75 45.25 18.75H576c35.35 0 64-28.65 64-64V128c0-35.35-28.65-64-64-64zm-84.69 254.06c6.25 6.25 6.25 16.38 0 22.63l-22.62 22.62c-6.25 6.25-16.38 6.25-22.63 0L384 301.25l-62.06 62.06c-6.25 6.25-16.38 6.25-22.63 0l-22.62-22.62c-6.25-6.25-6.25-16.38 0-22.63L338.75 256l-62.06-62.06c-6.25-6.25-6.25-16.38 0-22.63l22.62-22.62c6.25-6.25 16.38-6.25 22.63 0L384 210.75l62.06-62.06c6.25-6.25 16.38-6.25 22.63 0l22.62 22.62c6.25 6.25 6.25 16.38 0 22.63L429.25 256l62.06 62.06z&quot;; -fx-font-size: 12pt; -fx-min-width: 14px; -fx-min-height: 14px;" textAlignment="CENTER" textFill="WHITE">
-         <font>
-            <Font size="21.0" />
-         </font>
-      </Button>
+      <ImageView fitHeight="33.0" fitWidth="35.0" layoutX="403.0" layoutY="184.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/icons8-backspace-90-light.png" />
+         </image>
+      </ImageView>
    </children>
    <padding>
       <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />

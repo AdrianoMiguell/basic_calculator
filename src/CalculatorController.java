@@ -106,7 +106,12 @@ public class CalculatorController {
 
     @FXML
     void btnBackspaceActived(ActionEvent event) {
-        System.out.println("Atualização futura!");
+        System.out.println(enterValueField.getText());
+        String st = enterValueField.getText();
+        String newSt = st.substring(0, st.length() - 1);
+        enterValueField.setText(newSt);
+        number[numberAct] = newSt;
+        System.out.println("menos um = " + newSt);
     }
 
     @FXML
