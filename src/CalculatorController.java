@@ -284,6 +284,8 @@ public class CalculatorController {
         int n1 = Integer.parseInt(number[0]);
         int n2 = Integer.parseInt(number[1]);
 
+        System.out.println(n1);
+
         switch (op) {
             case "+":
                 result = sum(n1, n2);
